@@ -29,7 +29,6 @@ const sendWednesday = (message) => {
  * null  | Deregistered
  * "123" | Registered to channel "123"
  */
-
 let id = "1121132183525007391"; // Default to shitpost channel
 
 /*** MARCO POLO ***/
@@ -96,10 +95,14 @@ client.once("ready", () => {
    */
   let scheduledMessage = new cron.CronJob(schedule, () => {
     if (id) {
-      // get channel by id
-      const channel = client.channels.cache.get(id);
-      // send message
-      sendTuesday(channel);
+      try {
+        // get channel by id
+        const channel = client.channels.cache.get(id);
+        // send message
+        sendTuesday(channel);
+      } catch {
+        console.log("Hang in there, baby!");
+      }
     }
 
     if (!id) {
