@@ -1,20 +1,32 @@
 # README
 
 ## Getting starting
-TODO
+Hello, world!
 
-### Set up
-TODO 
+This is a discord bot written in javascript using the discord.js library.
 
-Install local dependencies
-```npm install```
-Install global dependencies
-```npm install -g nodemon```
+Discord: https://discord.com/developers/applications/1136060310885769226/bot
+Git: https://github.com/etaiklein/marukibot
+Heroku: https://dashboard.heroku.com/apps/marukibot
 
 ## Development
-TODO
-(Optional) Run the nodemon server 
-```nodemon```
+```
+# download the repo
+git clone https://github.com/etaiklein/marukibot.git
+# install dependencies
+cd marukibot
+npm install
+npm install -g nodemon
+```
+Grab token from discord or heroku, and update the .env
+
+```
+# run with nodemon to pick up local changes
+nodemon
+```
+
+## Deployment
+```git push && git push heroku```
 
 ## Contributing
-TODO
+Submit a github pull request with your changes
