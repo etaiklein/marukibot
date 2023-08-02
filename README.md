@@ -7,7 +7,7 @@ This is a discord bot written in javascript using the discord.js library.
 
 Discord: https://discord.com/developers/applications/1136060310885769226/bot
 Git: https://github.com/etaiklein/marukibot
-Heroku: https://dashboard.heroku.com/apps/marukibot
+Plox: https://panel.plox.host/server/e20dbb43
 
 ## Development
 ```
@@ -26,7 +26,8 @@ nodemon
 ```
 
 ## Deployment
-```git push && git push heroku```
+```git push```
+Then, copy files to plox
 
 ## Contributing
-Submit a github pull request with your changes
+PR
